@@ -13,8 +13,6 @@ class SimpleTest(unittest.TestCase):
 
         self.assertEqual(response.status_code, 200)
 
-        self.assertEqual(len(response.data), 2)
-
     def test_get_one_resume(self):
         response = self.client.get('/resume/1/')
 
